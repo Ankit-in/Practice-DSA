@@ -1,0 +1,29 @@
+package abstraction;
+
+abstract class Cars{
+	int speed=120;
+	abstract int speed();
+}
+class Tata extends Cars{
+
+	@Override
+	int speed() {
+		// TODO Auto-generated method stub
+		return speed + 20;
+	}
+	
+}
+class Bmw extends Cars{
+
+	@Override
+	int speed() {
+	
+		return speed +200;
+	}
+	
+}
+
+
+public class Car {
+	Tata t = new Tata();
+}

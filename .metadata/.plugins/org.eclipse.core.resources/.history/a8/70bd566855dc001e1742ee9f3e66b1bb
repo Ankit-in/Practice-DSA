@@ -1,0 +1,12 @@
+
+public class str {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name="this is ankit";
+		String find="ankit";
+		System.out.println(name.compareToIgnoreCase(find));
+
+	}
+
+}

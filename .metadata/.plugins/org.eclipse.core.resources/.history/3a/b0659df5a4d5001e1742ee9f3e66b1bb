@@ -1,0 +1,18 @@
+package oops;
+
+public class Parent {
+	void name() {
+		System.out.println("Ankit");
+	}
+	
+	public static void main( String[] args) {
+		Child c = new Child();
+	}
+
+}
+class Child extends Parent{
+	void name() {
+		System.out.println("Singh");
+	}
+}
+

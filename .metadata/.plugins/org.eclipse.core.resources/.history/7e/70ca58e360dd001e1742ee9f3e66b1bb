@@ -1,0 +1,19 @@
+
+public class fibonaci {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=10;
+		int j=0;
+		int Sum=0;
+		int i=-1;
+		while(i<=n) {
+			int sum=j+i;
+			j=sum;
+			System.out.println(sum);
+			i++;
+		}
+
+	}
+
+}

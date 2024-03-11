@@ -1,0 +1,20 @@
+import java.util.*;
+public class FirstAL {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> arr=new ArrayList<>();
+		arr.add(5);
+		arr.add(10);
+		arr.add(15);
+		arr.add(20);
+		arr.add(25);
+		System.out.println(arr);
+		arr.remove(2);
+		System.out.println(arr);
+		System.out.println(arr.size());
+		arr.add(2,15);
+		
+
+	}
+
+}

@@ -1,0 +1,11 @@
+
+public class str {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str=new String("hello");
+		int index=str.indexOf(5);
+		System.out.println(index);
+	}
+
+}

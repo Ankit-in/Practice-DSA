@@ -1,0 +1,13 @@
+
+public class str {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//to find find string present on name string
+		String name="this is ankit kumar. i'm btech";
+		String find="ankit kumar";
+		System.out.println(name.compareTo(find));
+
+	}
+
+}

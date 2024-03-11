@@ -1,0 +1,17 @@
+
+public class str {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//to find find string present on name string
+		String name="this is ankit kumar. i'm btech";
+		String find="ankit kumar";
+		//contains method return true if String present in 2nd String.
+		System.out.println(name.contains(find));
+		//indexof takes string as input and gives index if string present if not present return -1;
+		System.out.println(name.indexOf(find));
+		System.out.println(name.indexOf(find, 0));
+
+	}
+
+}

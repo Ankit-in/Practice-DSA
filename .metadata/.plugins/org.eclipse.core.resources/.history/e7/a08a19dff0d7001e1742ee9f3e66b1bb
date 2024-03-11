@@ -1,0 +1,30 @@
+
+
+public class Linklist {
+	
+	public class Node{
+		int data;
+		Node next;
+		Node(int data){
+			this.data=data;
+			this.next=null;
+		}
+		
+	}
+	public Node head;
+	
+	public void addelement(int value) {
+		Node newnode=new Node(value);
+		newnode.next=head;
+		head=newnode;
+	}
+	public static void main(String[] args) {
+		Linklist l1= new Linklist();
+		l1.addelement(5);
+		System.out.println("->");
+		l1.addelement(6);
+		System.out.println("->");
+		System.out.println("Null");
+	}
+
+}

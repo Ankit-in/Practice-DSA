@@ -1,0 +1,39 @@
+
+public class ReverseWordwise {
+	public static String reverseString(String str) {
+		String reverseing="";
+		for(int i=0;i<str.length();i++) {
+			reverseing = str.charAt(i) + reverseing;
+		}
+		int startWord=0;
+		String finalWord="";
+		int j=0;
+		for(;j<reverseing.length();j++) {
+			if(reverseing.charAt(j)==' ') {
+				int endWord=j-1;
+				String reversWord="";
+				for(int k=startWord;k<=endWord;k++ ) {
+					reversWord=reverseing.charAt(k)+reversWord;
+				}
+				finalWord += reversWord +" ";
+				startWord=j+1;
+			}
+		}
+		int endWord=j-1;
+		String reversWord="";
+		for(int k=startWord;k<=endWord;k++ ) {
+			reversWord=reverseing.charAt(k)+reversWord;
+		}
+		finalWord += reversWord;
+		return finalWord;
+		
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="\"ani&ma%lofhe*av$en\";
+		System.out.println(reverseString(str));
+	}
+
+}

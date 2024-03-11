@@ -1,0 +1,21 @@
+
+public class RemovChFrFSString {
+
+	public static void main(String[] args) {
+		String str1="abcdef";
+		String str2="def";
+		String str3="";
+		int fp=0;
+		int secp=0;
+		while(fp<str1.length()) {
+			if(str1.charAt(fp)!=str2.charAt(secp)) {
+				str3=str3+str1.charAt(fp);
+				
+				
+			}
+			fp++;
+		}
+		
+	}
+
+}

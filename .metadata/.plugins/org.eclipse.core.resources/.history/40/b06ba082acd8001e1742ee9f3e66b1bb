@@ -1,0 +1,67 @@
+
+
+public class Linklist {
+	
+	public class Node{
+		int data;
+		Node next;
+		Node(int data){
+			this.data=data;
+			this.next=null;
+		}
+		
+	}
+	public Node head;
+	
+	public void addelement(int data) {
+		Node newnode=new Node(data);
+		newnode.next=head;
+		head=newnode;
+		
+		
+	}
+	public void print() {
+		for(Node currnode=head;currnode!=null;currnode=currnode.next) {
+			System.out.print(currnode.data +"->");
+		}
+		System.out.println("null");
+	}
+	
+	public void addatmiddle(int data) {
+		int llsize=0;
+		Node currnode=head;
+		while(currnode!=null) {
+			llsize++;
+			currnode=currnode.next;
+		}
+		int mid=llsize/2;
+		
+		Node curr=head;
+		for(int i=0;i<mid-1;i++) {
+			curr=curr.next;
+		}
+		//System.out.println(curr.next.data);
+		Node prev=head;
+		for(int i=0;i<mid-1;i++) {
+			prev=prev.next;
+		}
+		//System.out.println(prev.data)
+		prev.next.data=data;
+		//System.out.println(prev.next.data);
+		//System.out.println(prev.next.next.data);
+		System.out.println(curr.next.data);
+		
+	}
+	public static void main(String[] args) {
+		Linklist l1= new Linklist();
+		l1.addelement(5);
+		l1.addelement(6);
+		l1.addelement(7);
+		l1.addelement(8);
+		l1.print();
+		l1.addatmiddle(10);
+		l1.print();
+		
+	}
+
+}

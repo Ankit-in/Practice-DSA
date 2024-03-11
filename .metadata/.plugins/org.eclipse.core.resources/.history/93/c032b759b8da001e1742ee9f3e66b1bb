@@ -1,0 +1,10 @@
+
+public class Reversestringword {
+
+	public static void main(String[] args) {
+		String[] str= {"pen my is this"};
+		System.out.println(str);
+
+	}
+
+}

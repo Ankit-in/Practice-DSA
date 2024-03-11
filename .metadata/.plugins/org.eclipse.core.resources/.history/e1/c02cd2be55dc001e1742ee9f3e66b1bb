@@ -1,0 +1,12 @@
+
+public class str {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name="this is ankit kumar. i'm btech";
+		String find="ankit kumar";
+		System.out.println(name.contains(find));
+
+	}
+
+}

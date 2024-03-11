@@ -1,0 +1,27 @@
+package Oops;
+
+class Parent{
+	
+	void name(int age,int rollno) {
+		System.out.println("Output");
+	}
+	void name(){
+		System.out.println("Ankit");
+	}
+}
+class Child extends Parent{
+	void name() {
+		super.name(5,10);
+		System.out.println("Singh");
+	}
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Child c = new Child();
+		c.name();
+	}
+
+}

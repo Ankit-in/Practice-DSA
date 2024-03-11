@@ -1,0 +1,15 @@
+import java.util.*;
+public class Validprantheses {
+	public static boolean isValid(String str) {
+		Stack<Character> stack=new Stack<>();
+		return true;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str= "(){}[]";
+		boolean Result=isValid(str);
+
+	}
+
+}

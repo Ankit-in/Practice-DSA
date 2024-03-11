@@ -1,0 +1,41 @@
+package oops;
+
+class Emplo{
+	static int Roll;
+	static int age;
+	int empId;
+	static void write() {
+		System.out.println("I'm writting");
+		age++;
+	}
+	void read() {
+		System.out.println("i'm reading ");
+		age++;
+		
+	}
+}
+
+public class Emp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Emplo.age=5;
+		Emplo.write();
+		Emplo e = new Emplo();
+		//e.age=56;
+		Emplo.write();
+		e.read();
+		
+		e.empId=2;
+		Emplo f=new Emplo();
+		System.out.println(e.age);//output=56 for static can be update by obj also
+		System.out.println(f.age); //output=56 for static var. can be update by obj but remain same for all object if not updated in new obj.
+		System.out.println(e.empId);//output=2, as it is non static var
+		System.out.println(f.empId); // output= 0 for non static var as it is non static var so ever time when obj is created we have to initiate the var.
+		
+		
+		
+
+	}
+
+}

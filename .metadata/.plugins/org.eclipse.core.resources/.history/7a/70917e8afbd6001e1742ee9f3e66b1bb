@@ -1,0 +1,35 @@
+public class PuseZend {
+
+    public static void main(String[] args) {
+        int arr[] = {2, 3, 0, 0, 5, 4,0};
+
+        int[] result = pushZerotoend(arr);
+        for (int num : result) {
+            System.out.print(num + " ");
+        }
+    }
+
+    public static int[] pushZerotoend(int[] arr) {
+        int arr_length = arr.length;
+        int end = arr_length - 1;
+        int i = 0;
+        int temp;
+        while (i < end) {
+            if (arr[i] == 0 && arr[end] != 0) {
+                temp = arr[end];
+                arr[end] = arr[i];
+                arr[i] = temp;
+                end--;
+                i++;
+            } else if (arr[i] != 0 && arr[end] != 0) {
+                i++;
+            } else if (arr[i] != 0 && arr[end] == 0) {
+                end--;
+                i++;
+            } else {
+                end--;
+            }
+        }
+        return arr; // Move the return statement outside the loop
+    }
+}

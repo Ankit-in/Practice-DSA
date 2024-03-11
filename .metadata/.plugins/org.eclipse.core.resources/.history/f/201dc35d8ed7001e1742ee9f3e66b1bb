@@ -1,0 +1,29 @@
+import java.util.*;
+public class FirstAL {
+
+	public static void main(String[] args) {
+		List<Integer> arrlist=new ArrayList<>();
+		//ArrayList<Integer> arrlist2=new ArrayList<>();
+		arrlist.add(5);
+		arrlist.add(10);
+		arrlist.add(15);
+		arrlist.add(20);
+		arrlist.add(25);
+		//System.out.println(arrlist);
+		arrlist.remove(2);
+		//System.out.println(arrlist);
+		//System.out.println(arrlist.size());
+		arrlist.add(2,15);
+		//System.out.println(arrlist);
+		//System.out.println(arrlist.addAll(arrlist));
+		//arrlist.addAll(arrlist2);
+		//System.out.println("---------");
+		for(int i: arrlist){
+			System.out.println(arrlist);
+		}
+		
+		
+
+	}
+
+}

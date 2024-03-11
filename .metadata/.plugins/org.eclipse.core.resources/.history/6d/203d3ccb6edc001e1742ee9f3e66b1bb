@@ -1,0 +1,25 @@
+
+public class str {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//to find find string present on name string
+		String name="this is ankit kumr. i'm btech ";
+		String find="ankit kumr";
+		//contains method return true if String present in 2nd String.
+		System.out.println(name.contains(find));
+		//indexof takes string as input and gives index if string present if not present return -1;
+		System.out.println(name.indexOf(find));
+		System.out.println(name.indexOf('n'));
+		//indexof(string,index from) takes String that we want to find and index from where in another string it will search.
+		System.out.println(name.indexOf(find,9));
+		//indexof(ch,index from) do same work as above indexof but with char.
+		System.out.println(name.indexOf('a', 9));
+		//lastIndexof(ch) takes char and return index value from last occurance.
+		System.out.println(name.lastIndexOf('h'));
+		System.out.println(name.lastIndexOf(find));
+		
+
+	}
+
+}

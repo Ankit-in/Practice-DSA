@@ -1,0 +1,62 @@
+package oops;
+
+class Emplo{
+	static int Roll;
+	static int age;
+	int empId;
+	String name;
+	
+	Emplo(int Roll,int age,String name){
+		this.Roll=Roll;
+		this.age=age;
+		this.name=name;
+	}
+	static void write() {
+		System.out.println("I'm writting");
+		age++;
+		//empId++; error static method can not access non static field;
+		//read(); error static method can not access non static method;
+		
+	}
+	void read() {
+		System.out.println("i'm reading ");
+		age++;
+		empId++;
+		write();
+		
+	}
+}
+
+
+public class Emp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Emplo.age=5;
+		Emplo.write();
+		
+		System.out.println(Emplo.age);
+		Emplo e = new Emplo(10,20,"Ram");
+		System.out.println("Hashcode:"+e);
+		
+		
+		
+		//e.age=56;
+		Emplo.write();
+		e.read();
+		
+		e.empId=2;
+		
+		System.out.println(e.age);//output=23 for static can be update by obj also
+		Emplo f=new Emplo(30,40,"Ankit");
+		f.age=56;
+		System.out.println(f.age); //output=56 for static var. can be update by obj but remain same for all object if not updated in new obj.
+		System.out.println(e.empId);//output=2, as it is non static var
+		System.out.println(f.empId); // output= 0 for non static var as it is non static var so ever time when obj is created we have to initiate the var.
+		
+		
+		
+
+	}
+
+}

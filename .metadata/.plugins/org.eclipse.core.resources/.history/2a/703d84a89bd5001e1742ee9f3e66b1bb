@@ -1,0 +1,46 @@
+package abstraction;
+
+abstract class Cars{
+	
+	abstract String speed();
+}
+class Tata extends Cars{
+
+	@Override
+	String speed() {
+		// TODO Auto-generated method stub
+		return "100";
+	}
+
+
+	
+	}
+	
+class Bmw {
+
+	String speed() {
+	
+		return "200";
+	}
+	
+}
+
+
+public class Car extends Cars{
+	
+	public static void main(String[] args) {
+		Tata t = new Tata(); 
+		Cars c =new Tata();
+		Car b = new Car();
+		b.speed();
+		c.speed();
+		t.speed();
+		System.out.println(t.speed());
+	}
+
+	@Override
+	String speed() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

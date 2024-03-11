@@ -1,0 +1,38 @@
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Sett {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Set<Integer> hashset1=new HashSet<>();
+		Set<Integer> hashset2=new HashSet<>();
+		Set<Integer> linkedset1=new LinkedHashSet<>();
+		Set<Integer> treeset1=new TreeSet<>();
+		hashset1.add(5);
+		hashset1.add(10);
+		hashset2.add(11);
+		hashset1.addAll(hashset2);
+		linkedset1.add(15);
+		treeset1.add(12);
+		treeset1.add(15);
+		treeset1.add(10);
+		//hashset1.clear();
+		hashset1.containsAll(treeset1);
+		hashset1.contains(treeset1);
+		hashset1.addAll(treeset1);
+		hashset1.addAll(linkedset1);
+		System.out.println(hashset1);
+		System.out.println(hashset1.containsAll(hashset2));
+		System.out.println(hashset1.equals(hashset2));
+		//hashset1.clear();
+		System.out.println(hashset1.isEmpty());
+		System.out.println(hashset1.remove(10));
+		
+		
+
+	}
+
+}

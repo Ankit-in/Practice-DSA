@@ -1,0 +1,38 @@
+
+public class RemoveDublicate {
+
+	public static void main(String[] args) {
+		String str="abcddefd";
+//		String str1="";
+//		str1=str1+str.charAt(0);
+//		int i=0;
+//		while(i<str1.length()) {
+//			int index=0;
+//			for(int j=i+1;j<str.length();j++) {
+//				if(str1.charAt(i)!=str.charAt(j)) {
+//					str1 += str.charAt(i);
+//					i++;
+//				}
+//			}break;
+//		}
+//		System.out.println(str1);
+		char[] str1=str.toCharArray();
+		int t = 0;
+
+        for (int i = 0; i < str1.length; i++) {
+            int j;
+            for (j = 0; j < str1.length-2; j++) {
+            	//System.out.println(j);
+                if (str1[i] != str1[j+1]) {
+                    str1[t]=str1[j];
+                    t++;
+                }
+            }
+            
+        }
+        if(t<str.length()) {
+        	System.out.println(str1);
+        }
+    	
+	}
+}

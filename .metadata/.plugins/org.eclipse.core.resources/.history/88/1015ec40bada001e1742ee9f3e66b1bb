@@ -1,0 +1,26 @@
+
+public class Reversestringword {
+
+	public static void main(String[] args) {
+		String str= "pen my is this";
+		System.out.println(reverseString(str));
+
+	}
+
+	public static char[] reverseString(String str) {
+		// TODO Auto-generated method stub
+		
+		char[] str1=str.toCharArray();
+		//System.out.println(str1);
+		int last=str1.length-1;
+		int i=0;
+		while(i<last) {
+			if(str1[last]==' ') {
+				
+			}
+		}
+		
+		return str1;
+	}
+
+}

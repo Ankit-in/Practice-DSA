@@ -1,0 +1,33 @@
+package Oops;
+
+public interface Vech {
+	public final static int num=15;
+	public int maxSpeed();
+	public int print();
+	
+
+}
+class Car implements Vech {
+
+	@Override
+	public int maxSpeed() {
+		// TODO Auto-generated method stub
+		return 200;
+	}
+
+	@Override
+	public int print() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}
+
+public class Interf {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

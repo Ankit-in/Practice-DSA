@@ -1,0 +1,31 @@
+package oops;
+
+class Emplo{
+	static int Roll;
+	static int age;
+	int empId;
+	static void write() {
+		System.out.println("I'm writting");
+	}
+	void read() {
+		System.out.println("i'm reading ");
+	}
+}
+
+public class Emp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Emplo.Roll=5;
+		Emplo e = new Emplo();
+		e.age=56;
+		Emplo f=new Emplo();
+		
+		System.out.println(e.age);
+		
+		
+		
+
+	}
+
+}

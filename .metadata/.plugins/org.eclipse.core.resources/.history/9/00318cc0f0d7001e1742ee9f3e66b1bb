@@ -1,0 +1,26 @@
+
+
+class Node{
+	int data;
+	Node next;
+	Node(int data){
+		this.data=data;
+	}
+}
+
+
+
+public class Linklist {
+
+	public static void main(String[] args) {
+		Node n1=new Node(10);
+		Node n2=new Node(15);
+		Node n3=new Node(20);
+		Node n4=new Node(25);
+		Node n5=new Node(30);
+		
+		System.out.println(n1.data);
+
+	}
+
+}
